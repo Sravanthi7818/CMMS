@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Computer Lab Complaints</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    .complaint {
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 8px 16px;
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Computer Lab Complaints</h2>
+
+  <div class="complaint">
+    <p>Computer #1 is not booting up.</p>
+    <button onclick="handleButtonClick('Computer #1')">Resolve</button>
+  </div>
+
+  <div class="complaint">
+    <p>Printer is out of paper.</p>
+    <button onclick="handleButtonClick('Printer')">Resolve</button>
+  </div>
+
+  <div class="complaint">
+    <p>Internet connection is slow.</p>
+    <button onclick="handleButtonClick('Internet')">Resolve</button>
+  </div>
+
+  <!-- JavaScript function to handle button click -->
+  <script>
+    function handleButtonClick(complaintType) {
+      alert('Complaint resolved for: ' + complaintType);
+      // You can add further logic to update the page or perform additional actions.
+    }
+  </script>
+
+</body>
+</html>
